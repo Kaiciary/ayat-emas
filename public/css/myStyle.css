@@ -1,0 +1,554 @@
+@font-face {
+  font-family: MyriadProBold;
+  src: url('./../assets/fonts/MYRIADPRO-BOLD.woff');
+}
+
+@font-face {
+  font-family: MyriadProSemiBold;
+  src: url('./../assets/fonts/MYRIADPRO-SEMIBOLD.woff');
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url('./../assets/fonts/MYRIADPRO-REGULAR.woff');
+}
+
+@font-face {
+  font-family: EBGaramond;
+  src: url('./../assetsfonts/EBGaramond-Medium.ttf');
+}
+
+@font-face {
+  font-family: RageItalic;
+  src: url('./../assets/fonts/RAGE.TTF');
+}
+
+html {
+  background-color: white;
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  max-width: 412px;
+  margin: 0 auto;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%);
+  width: 13%;
+}
+
+.kadoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+
+  0%,
+  100% {
+    top: 50%;
+  }
+
+  50% {
+    top: 51%;
+  }
+}
+
+.allContainer {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  text-align: center;
+}
+
+.ayat {
+  font-family: MyriadProBold;
+  font-size: 1.5rem;
+}
+
+.isi {
+  font-family: MyriadPro;
+  text-align: justify;
+  padding: 0px 23% 0 23%;
+  font-size: 0.9rem;
+}
+
+.footerContainer {
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+}
+
+.footerLogo {
+  position: absolute;
+  bottom: 0;
+  right: 36%;
+  max-width: 10%;
+  margin-bottom: 14px;
+}
+
+.highlight {
+  font-family: 'MyriadProSemiBold';
+  color: white;
+  font-size: 10px;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.kotakan {
+  max-width: 50%;
+}
+
+.download {
+  border-radius: 8px;
+  background-color: #ffffff3f;
+  /* Blue background */
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* black text */
+  padding: 12px 14px;
+  /* Some padding */
+  font-size: 0.7rem;
+  /* Set a font size */
+  cursor: pointer;
+  /* Mouse pointer on hover */
+}
+
+.wishContainer {
+  font-family: MyriadPro;
+  padding-top: 5px;
+  display: none;
+}
+
+.wish {
+  font-size: 0.8rem;
+}
+
+.buttonContainer {
+  display: flex;
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* The Modal (background) */
+.modal {
+  font-family: MyriadPro;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+#canvas-wrapper {
+  display: none;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+
+}
+
+#canvas-container {
+  display: none;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+
+@media only screen and (max-width: 1204px) {
+  body {
+    max-width: 1204px;
+  }
+  
+  .logo {
+    width: 40%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 28px;
+  }
+
+  .allContainer {
+    top: 25%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 2.4rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 1.7rem;
+  }
+
+  .wish {
+    font-size: 1.5rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  .buttonContainer{
+    bottom: 15%;
+  }
+
+  .download{
+    padding: 10px 10px;
+    font-size: 1.5rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .logo {
+    width: 25%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+
+  .allContainer {
+    top: 19%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 2rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .wish {
+    font-size: 1.2rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  .buttonContainer{
+    bottom: 15%;
+  }
+
+  .download{
+    padding: 10px 10px;
+    font-size: 1.1rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .logo {
+    width: 38%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 12px;
+  }
+
+  .allContainer {
+    top: 20%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 1.5rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .wish {
+    font-size: 0.9rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  .buttonContainer{
+    bottom: 10%;
+  }
+
+  .download{
+    padding: 10px 10px;
+    font-size: 0.6rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logo {
+    width: 35%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 12px;
+  }
+
+  .allContainer {
+    top: 18%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 1.4rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+  .wish {
+    font-size: 0.8rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  .buttonContainer{
+    bottom: 10%;
+  }
+
+  .download{
+    padding: 10px 10px;
+    font-size: 0.5rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    width: 35%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 11px;
+  }
+
+  .allContainer {
+    top: 20%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 1.5rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+  .wish {
+    font-size: 0.8rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  .buttonContainer{
+    bottom: 10%;
+  }
+
+  .download{
+    padding: 10px 10px;
+    font-size: 0.6rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .logo {
+    width: 35%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 8px;
+  }
+
+  .allContainer {
+    top: 20%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 1.1rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .wish {
+    font-size: 0.7rem;
+  }
+
+  .kotakan {
+    max-width: 90%;
+  }
+
+  .buttonContainer{
+    bottom: 10%;
+  }
+
+  .download{
+    padding: 10px 10px;
+    font-size: 0.5rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+

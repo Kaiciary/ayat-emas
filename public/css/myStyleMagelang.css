@@ -1,0 +1,563 @@
+@font-face {
+  font-family: MyriadProBold;
+  src: url('./../assets/fonts/MYRIADPRO-BOLD.woff');
+}
+
+@font-face {
+  font-family: MyriadProSemiBold;
+  src: url('./../assets/fonts/MYRIADPRO-SEMIBOLD.woff');
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url('./../assets/fonts/MYRIADPRO-REGULAR.woff');
+}
+
+@font-face {
+  font-family: EBGaramond;
+  src: url('./../assetsfonts/EBGaramond-Medium.ttf');
+}
+
+@font-face {
+  font-family: RageItalic;
+  src: url('./../assets/fonts/RAGE.TTF');
+}
+
+@font-face {
+  font-family: gothamBook;
+  src: url('./../assets/fonts/Gotham-Book.otf');
+}
+
+html {
+  background-color: white;
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  max-width: 412px;
+  margin: 0 auto;
+  background-image: url('../assets/backgroundMagelang2024.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 9%;
+  transform: translate(-50%);
+  width: 20%;
+}
+
+.kadoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+
+  0%,
+  100% {
+    top: 50%;
+  }
+
+  50% {
+    top: 51%;
+  }
+}
+
+.allContainer {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  text-align: center;
+}
+
+.ayat {
+  font-family: gothamBook;
+  font-size: 1.5rem;
+}
+
+.isi {
+  font-family: gothamBook;
+  text-align: left;
+  padding: 0 140px;
+  font-size: 0.9rem;
+}
+
+.footerContainer {
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+}
+
+.footerLogo {
+  position: absolute;
+  bottom: 0;
+  right: 36%;
+  max-width: 10%;
+  margin-bottom: 14px;
+}
+
+.highlight {
+  font-family: gothamBook;
+  color: white;
+  font-size: 10px;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.kotakan {
+  max-width: 50%;
+}
+
+.download {
+  border-radius: 8px;
+  background-color: #000000b6;
+  /* Blue background */
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* black text */
+  padding: 12px 14px;
+  /* Some padding */
+  font-size: 0.7rem;
+  /* Set a font size */
+  cursor: pointer;
+  /* Mouse pointer on hover */
+}
+
+.wishContainer {
+  font-family: gothamBook;
+  padding-top: 5px;
+  display: none;
+}
+
+.wish {
+  font-size: 0.8rem;
+}
+
+.buttonContainer {
+  display: flex;
+  position: absolute;
+  /*bottom: 25%;*/
+  top:3%;
+  left: 5%;
+}
+
+/* The Modal (background) */
+.modal {
+  font-family: gothamBook;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+#canvas-wrapper {
+  display: none;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+
+}
+
+#canvas-container {
+  display: none;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+
+@media only screen and (max-width: 1204px) {
+  body {
+    max-width: 1204px;
+  }
+  
+  .logo {
+    top: 7%;
+    width: 55%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 28px;
+  }
+
+  .allContainer {
+    top: 30%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 2.4rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 1.7rem;
+  }
+
+  .wish {
+    font-size: 1.5rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  /*.buttonContainer{
+    bottom: 15%;
+  }*/
+
+  .download{
+    padding: 10px 10px;
+    font-size: 1.5rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .logo {
+    width: 40%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+
+  .allContainer {
+    top: 19%;
+    width: 75%;
+  }
+
+  .ayat {
+    font-size: 2rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .wish {
+    font-size: 1.2rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  /*.buttonContainer{
+    bottom: 15%;
+  }*/
+
+  .download{
+    padding: 10px 10px;
+    font-size: 1.1rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .logo {
+    width: 55%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 12px;
+  }
+
+  .allContainer {
+    top: 25%;
+    width: 100%;
+  }
+
+  .ayat {
+    font-size: 1.5rem;
+  }
+
+  .isi {
+    padding: 0 30px;
+    font-size: 0.9rem;
+  }
+
+  .wish {
+    font-size: 0.9rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  /*.buttonContainer{
+    bottom: 37%;
+  }*/
+
+  .download{
+    padding: 10px 10px;
+    font-size: 1rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logo {
+    width: 55%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 12px;
+  }
+
+  .allContainer {
+    top: 25%;
+    width: 100%;
+  }
+
+  .ayat {
+    font-size: 1.4rem;
+  }
+
+  .isi {
+    padding: 0 30px;
+    font-size: 0.82rem;
+  }
+
+  .wish {
+    font-size: 0.8rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  /*.buttonContainer{
+    bottom: 36%;
+  }*/
+
+  .download{
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    width: 55%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 11px;
+  }
+
+  .allContainer {
+    top: 25%;
+    width: 90%;
+    padding-left: 20px;
+  }
+
+  .ayat {
+    font-size: 1.5rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+  .wish {
+    font-size: 0.8rem;
+  }
+
+  .kotakan {
+    max-width: 100%;
+  }
+
+  /*.buttonContainer{
+    bottom: 37%;
+  }*/
+
+  .download{
+    padding: 10px 10px;
+    font-size: 0.9rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .logo {
+    width: 55%;
+  }
+
+  .footerContainer {
+    left: 5%;
+  }
+
+  .footerLogo {
+    right: 4%;
+    max-width: 35%;
+  }
+
+  .highlight {
+    font-size: 8px;
+  }
+
+  .allContainer {
+    top: 25%;
+    width: 90%;
+    padding-right: 20px;
+  }
+
+  .ayat {
+    font-size: 1.1rem;
+  }
+
+  .isi {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .wish {
+    font-size: 0.7rem;
+  }
+
+  .kotakan {
+    max-width: 90%;
+  }
+
+  /*.buttonContainer{
+    top: 35%;
+  }*/
+
+  .download{
+    padding: 10px 10px;
+    font-size: 0.53rem;
+  }
+
+  .sticker{
+    max-width: 20%;
+  }
+}
+
