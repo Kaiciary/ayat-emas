@@ -142,7 +142,7 @@ body {
 .buttonContainer {
   display: flex;
   position: absolute;
-  bottom: 35%;
+  bottom: 40%;
   /*top: 3%;*/
   left: 50%;
   transform: translateX(-50%);
