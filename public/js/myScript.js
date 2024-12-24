@@ -105,7 +105,7 @@ document.getElementById('downloadButton').addEventListener('click', function () 
 
   // Capture the content of the <body> using html2canvas
   html2canvas(body,{
-    scale: 7, // Increase the scale for higher resolution (3x is a good start)
+    scale: 3, // Increase the scale for higher resolution (3x is a good start)
     width: 1080, // Ensure full width
     height: 1920,
   }).then(function (canvas) {
