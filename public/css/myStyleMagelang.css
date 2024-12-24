@@ -350,7 +350,7 @@ body {
 
   body {
     background-image: url('../assets/background_magelang_potrait_1242x2688.jpg');
-    background-size: contain;
+    background-size: cover;
   }
 
   .logo {
