@@ -103,10 +103,10 @@ document.getElementById('downloadButton').addEventListener('click', function () 
 
   // Capture the content of the <body> using dom-to-image
   domtoimage.toPng(body, {
-    width: 1242,  // Ensure full width
-    height: 2688, // Ensure full height
+    width: 1080,  // Ensure full width
+    height: 1920, // Ensure full height
     style: {
-      transform: 'scale(7)', // Set scale for higher resolution
+      transform: 'scale(10)', // Set scale for higher resolution
     }
   }).then(function (dataUrl) {
     // Create an "a" element to trigger the download
