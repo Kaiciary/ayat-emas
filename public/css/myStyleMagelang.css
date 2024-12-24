@@ -142,9 +142,10 @@ body {
 .buttonContainer {
   display: flex;
   position: absolute;
-  /*bottom: 25%;*/
-  top: 3%;
-  left: 5%;
+  bottom: 35%;
+  /*top: 3%;*/
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* The Modal (background) */

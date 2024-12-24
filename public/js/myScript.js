@@ -91,6 +91,7 @@ function showData(json) {
 
 async function downloadImage(res) {
   try {
+    $('#wait').css('display', 'block');
     // Make the request to the server to get the image
     const response = await fetch('https://ayat-emas-backend-49cae8c24038.herokuapp.com/download-ayat', {
       method: 'POST',
@@ -120,6 +121,7 @@ async function downloadImage(res) {
     anchor.href = imageUrl;
     anchor.download = 'ayat-emas_' + res + '.png';  // Specify the file name
     anchor.click();  // Trigger the download
+    $('#wait').css('display', 'none');
   } catch (error) {
     console.error('Error downloading the image:', error);
   }
