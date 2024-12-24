@@ -14,7 +14,7 @@ body {
   height: 100vh;
   max-width: 412px;
   margin: 0 auto;
-  background-image: url('../assets/backgroundMagelang2024.png');
+  background-image: url('../assets/webp/backgroundMagelang2024.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,7 +389,7 @@ body {
 @media only screen and (max-width: 375px) {
 
   body {
-    background-image: url('../assets/backgroundMagelang2024.png');
+    background-image: url('../assets/webp/backgroundMagelang2024.webp');
     background-size: contain;
   }
 
@@ -515,7 +515,7 @@ body {
 
 @media only screen and (max-width: 320px) {
   body {
-    background-image: url('../assets/backgroundMagelang2024.png');
+    background-image: url('../assets/webp/backgroundMagelang2024.webp');
     background-size: contain;
   }
 
