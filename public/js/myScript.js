@@ -99,7 +99,9 @@ document.getElementById('downloadButton').addEventListener('click', function () 
   document.getElementById('downloadButton').style.opacity = 0;
   document.getElementById('stickerButton').style.opacity = 0;
   // Capture the content of the <body> using html2canvas
-  html2canvas(document.body).then(function (canvas) {
+  html2canvas(document.body,{
+    scale: 3, // Increase the scale for higher resolution (3x is a good start)
+  }).then(function (canvas) {
     // Create an "a" element to trigger the download
     var link = document.createElement('a');
     link.href = canvas.toDataURL('image/png');
