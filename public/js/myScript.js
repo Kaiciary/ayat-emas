@@ -92,7 +92,7 @@ function showData(json) {
 async function downloadImage(res) {
   try {
     // Make the request to the server to get the image
-    const response = await fetch('http://localhost:3000/download-ayat', {
+    const response = await fetch('https://ayat-emas-backend-49cae8c24038.herokuapp.com/download-ayat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
