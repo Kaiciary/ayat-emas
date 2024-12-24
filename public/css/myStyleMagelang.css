@@ -1,29 +1,4 @@
 @font-face {
-  font-family: MyriadProBold;
-  src: url('./../assets/fonts/MYRIADPRO-BOLD.woff');
-}
-
-@font-face {
-  font-family: MyriadProSemiBold;
-  src: url('./../assets/fonts/MYRIADPRO-SEMIBOLD.woff');
-}
-
-@font-face {
-  font-family: MyriadPro;
-  src: url('./../assets/fonts/MYRIADPRO-REGULAR.woff');
-}
-
-@font-face {
-  font-family: EBGaramond;
-  src: url('./../assetsfonts/EBGaramond-Medium.ttf');
-}
-
-@font-face {
-  font-family: RageItalic;
-  src: url('./../assets/fonts/RAGE.TTF');
-}
-
-@font-face {
   font-family: gothamBook;
   src: url('./../assets/fonts/Gotham-Book.otf');
 }

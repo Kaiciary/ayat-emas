@@ -100,20 +100,24 @@ document.getElementById('downloadButton').addEventListener('click', function () 
   document.getElementById('stickerButton').style.opacity = 0;
 
   const body = document.body;
-  const bodyWidth = body.offsetWidth;
-  const bodyHeight = body.offsetHeight;
 
-  // Capture the content of the <body> using html2canvas
-  html2canvas(body,{
-    scale: 7, // Increase the scale for higher resolution (3x is a good start)
-    width: bodyWidth, // Ensure full width
-    height: bodyHeight,
-  }).then(function (canvas) {
+  // Capture the content of the <body> using dom-to-image
+  domtoimage.toPng(body, {
+    width: 1242,  // Ensure full width
+    height: 2688, // Ensure full height
+    style: {
+      transform: 'scale(7)', // Set scale for higher resolution
+    }
+  }).then(function (dataUrl) {
     // Create an "a" element to trigger the download
     var link = document.createElement('a');
-    link.href = canvas.toDataURL('image/png');
-    link.download = 'ayatemas.png';
+    link.href = dataUrl;  // The data URL for the PNG image
+    link.download = 'ayatemas.png';  // Name of the downloaded file
     link.click();
+    document.getElementById('downloadButton').style.opacity = 1;
+    document.getElementById('stickerButton').style.opacity = 1;
+  }).catch(function (error) {
+    console.error('Error capturing image:', error);
     document.getElementById('downloadButton').style.opacity = 1;
     document.getElementById('stickerButton').style.opacity = 1;
   });
