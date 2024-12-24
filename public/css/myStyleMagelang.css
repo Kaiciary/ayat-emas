@@ -40,7 +40,7 @@ body {
   max-width: 412px;
   margin: 0 auto;
   background-image: url('../assets/backgroundMagelang2024.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -91,7 +91,7 @@ body {
 .isi {
   font-family: gothamBook;
   text-align: left;
-  padding: 0 140px;
+  padding: 0 160px;
   font-size: 0.9rem;
 }
 
@@ -232,6 +232,8 @@ body {
 
 @media only screen and (max-width: 1204px) {
   body {
+    background-image: url('../assets/background_magelang_potrait_2304x3072.jpg');
+    background-size: cover;
     max-width: 1204px;
   }
   
@@ -255,7 +257,7 @@ body {
 
   .allContainer {
     top: 30%;
-    width: 75%;
+    width: 100%;
   }
 
   .ayat {
@@ -263,7 +265,7 @@ body {
   }
 
   .isi {
-    padding: 0;
+    padding: 0 70px;
     font-size: 1.7rem;
   }
 
@@ -309,8 +311,8 @@ body {
   }
 
   .allContainer {
-    top: 19%;
-    width: 75%;
+    top: 30%;
+    width: 100%;
   }
 
   .ayat {
@@ -318,7 +320,7 @@ body {
   }
 
   .isi {
-    padding: 0;
+    padding: 0 40px;
     font-size: 1.5rem;
   }
 
@@ -345,6 +347,12 @@ body {
 }
 
 @media only screen and (max-width: 430px) {
+
+  body {
+    background-image: url('../assets/background_magelang_potrait_1242x2688.jpg');
+    background-size: cover;
+  }
+
   .logo {
     width: 55%;
   }
@@ -372,7 +380,7 @@ body {
   }
 
   .isi {
-    padding: 0 30px;
+    padding: 0 20px;
     font-size: 0.9rem;
   }
 
@@ -399,6 +407,11 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
+  
+  body{
+    background-image: url('../assets/backgroundMagelang2024.png');
+    background-size: contain;
+  }
   .logo {
     width: 55%;
   }
@@ -453,6 +466,11 @@ body {
 }
 
 @media only screen and (max-width: 360px) {
+
+  body{
+    background-size: cover;
+  }
+
   .logo {
     width: 55%;
   }
@@ -477,7 +495,7 @@ body {
   }
 
   .ayat {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .isi {
@@ -506,7 +524,18 @@ body {
     max-width: 20%;
   }
 }
+@media only screen and (max-width: 344px) {
+  body{
+    background-image: url('../assets/background_magelang_potrait_1242x2688.jpg');
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-width: 320px) {
+  body{
+    background-image: url('../assets/backgroundMagelang2024.png');
+    background-size: contain;
+  }
   .logo {
     width: 55%;
   }
