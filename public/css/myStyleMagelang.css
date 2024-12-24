@@ -350,7 +350,7 @@ body {
 @media only screen and (max-width: 430px) {
 
   body {
-    background-image: url('../assets/background_magelang_potrait_1242x2688.jpg');
+    background-image: url('../assets/background_magelang_potrait_2304x3072.jpg');
     background-size: cover;
   }
 
@@ -410,8 +410,8 @@ body {
 @media only screen and (max-width: 375px) {
   
   body{
-    background-image: url('../assets/backgroundMagelang2024.png');
-    background-size: contain;
+    background-image: url('../assets/background_magelang_potrait_2304x3072.jpg');
+    background-size: cover;
   }
   .logo {
     width: 55%;
@@ -527,14 +527,14 @@ body {
 }
 @media only screen and (max-width: 344px) {
   body{
-    background-image: url('../assets/background_magelang_potrait_1242x2688.jpg');
+    background-image: url('../assets/background_magelang_potrait_2304x3072.jpg');
     background-size: cover;
   }
 }
 
 @media only screen and (max-width: 320px) {
   body{
-    background-image: url('../assets/backgroundMagelang2024.png');
+    background-image: url('../assets/background_magelang_potrait_2304x3072.jpg');
     background-size: contain;
   }
   .logo {
