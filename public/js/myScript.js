@@ -100,14 +100,14 @@ document.getElementById('downloadButton').addEventListener('click', function () 
   document.getElementById('stickerButton').style.opacity = 0;
 
   const body = document.body;
-  const bodyWidth = body.offsetWidth;
-  const bodyHeight = body.offsetHeight;
+  const bodyWidth = document.body.clientWidth;
+  const bodyHeight =document.body.clientHeight;
 
   // Capture the content of the <body> using html2canvas
   html2canvas(body,{
-    scale: 3, // Increase the scale for higher resolution (3x is a good start)
-    width: 1080, // Ensure full width
-    height: 1920,
+    scale: 1,
+    width: bodyWidth,
+    height: bodyHeight
   }).then(function (canvas) {
     // Create an "a" element to trigger the download
     var link = document.createElement('a');
