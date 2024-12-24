@@ -101,6 +101,8 @@ document.getElementById('downloadButton').addEventListener('click', function () 
   // Capture the content of the <body> using html2canvas
   html2canvas(document.body,{
     scale: 3, // Increase the scale for higher resolution (3x is a good start)
+    width: 1080, // Ensure full width
+    height: 1920,
   }).then(function (canvas) {
     // Create an "a" element to trigger the download
     var link = document.createElement('a');
