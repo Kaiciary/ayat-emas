@@ -75,7 +75,7 @@ body {
 
 .isi {
   font-family: gothamBook;
-  text-align: justify;
+  text-align: left;
   padding: 0 160px;
   font-size: 0.9rem;
 }
